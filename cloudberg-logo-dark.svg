@@ -21,7 +21,7 @@
             <polygon points="85,25 125,35 100,70" fill="#F0F8FF"/>
             <polygon points="100,70 125,35 135,60" fill="#E1EFFE"/>
             <polygon points="100,100 100,70 135,60" fill="#A4CAFE"/>
-            <polygon points="100,100 135,60 140,100" fill="#76A9FA"/>
+            <polygon points="100,100 135,60 140,100" fill="#8BB4E8"/>
             <polygon points="135,60 170,75 140,100" fill="#C3DDFD"/>
             <polygon points="140,100 170,75 180,100" fill="#E1EFFE"/>
         </g>
@@ -29,36 +29,29 @@
         <!-- ================= 水面分割线 ================= -->
         <line x1="15" y1="100" x2="185" y2="100" stroke="#00E5FF" stroke-width="2" opacity="0.8"/>
 
-        <!-- ================= 水面之下：数据晶体冰山 ================= -->
-        <g stroke="#48CAE4" stroke-width="0.5" stroke-opacity="0.4" stroke-linejoin="round">
-            <polygon points="20,100 60,100 40,130" fill="#48CAE4"/>
-            <polygon points="60,100 75,150 40,130" fill="#00B4D8"/>
-            <polygon points="60,100 100,100 75,150" fill="#90E0EF"/>
-            <polygon points="100,100 125,145 75,150" fill="#0096C7"/>
-            <polygon points="100,100 140,100 125,145" fill="#0077B6"/>
-            <polygon points="140,100 160,125 125,145" fill="#023E8A"/>
-            <polygon points="140,100 180,100 160,125" fill="#03045E"/>
+        <!-- ================= 水面之下：数据晶体冰山（光源左上，深度压暗） ================= -->
+        <g stroke="#2a5a7a" stroke-width="0.5" stroke-opacity="0.3" stroke-linejoin="round">
+            <!-- 第一排：水面下浅层 -->
+            <polygon points="20,100 60,100 40,130" fill="#C9E4F0"/>
+            <polygon points="60,100 75,150 40,130" fill="#8EC4DE"/>
+            <polygon points="60,100 100,100 75,150" fill="#A8D2E8"/>
+            <polygon points="100,100 125,145 75,150" fill="#5A8FB8"/>
+            <polygon points="100,100 140,100 125,145" fill="#4A7AA8"/>
+            <polygon points="140,100 160,125 125,145" fill="#2D5488"/>
+            <polygon points="140,100 180,100 160,125" fill="#1F4270"/>
 
-            <polygon points="40,130 75,150 90,175" fill="#0077B6"/>
-            <polygon points="75,150 125,145 90,175" fill="#023E8A"/>
-            <polygon points="125,145 135,165 90,175" fill="#03045E"/>
-            <polygon points="125,145 160,125 135,165" fill="#001D3D"/>
+            <!-- 第二排：中层 -->
+            <polygon points="40,130 75,150 90,175" fill="#2D6690"/>
+            <polygon points="75,150 125,145 90,175" fill="#1F4A78"/>
+            <polygon points="125,145 135,165 90,175" fill="#13325C"/>
+            <polygon points="125,145 160,125 135,165" fill="#0A2347"/>
 
-            <polygon points="40,130 90,175 110,195" fill="#0096C7"/>
-            <polygon points="90,175 135,165 110,195" fill="#023E8A"/>
-            <polygon points="160,125 135,165 110,195" fill="#001D3D"/>
+            <!-- 第三排：尖端最深 -->
+            <polygon points="40,130 90,175 110,195" fill="#1A4370"/>
+            <polygon points="90,175 135,165 110,195" fill="#0E2B52"/>
+            <polygon points="160,125 135,165 110,195" fill="#06193A"/>
         </g>
 
-        <!-- ================= 科技网络节点 ================= -->
-        <g fill="#00E5FF">
-            <circle cx="40" cy="130" r="1.5"/>
-            <circle cx="75" cy="150" r="2"/>
-            <circle cx="125" cy="145" r="1.5"/>
-            <circle cx="160" cy="125" r="1.5"/>
-            <circle cx="90" cy="175" r="2"/>
-            <circle cx="135" cy="165" r="2"/>
-            <circle cx="110" cy="195" r="2"/>
-        </g>
     </g>
 
     <!-- ================= 品牌文字 ================= -->
