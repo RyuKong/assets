@@ -1,11 +1,6 @@
 <?xml version="1.0" standalone="no"?>
-<svg id="cloudberg-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 212" width="1100" height="212">
+<svg id="cloudberg-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1096 264" width="1096" height="264">
     <defs>
-        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-            <feGaussianBlur stdDeviation="2" result="blur"/>
-            <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-        </filter>
-
         <!-- 科技感渐变文字颜色 (适配暗色背景) -->
         <linearGradient id="text-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" stop-color="#ffffff"/>
@@ -14,8 +9,8 @@
         </linearGradient>
     </defs>
 
-    <!-- 图形部分：整体平移 (+5, -5)，让四周 padding = 20 -->
-    <g transform="translate(5,-5)">
+    <!-- 图形部分：放大 1.3x，平移后四周 padding = 20 -->
+    <g transform="translate(0.5,-12.5) scale(1.3)">
         <!-- ================= 水面之上：纯净几何云朵 ================= -->
         <g stroke="#ffffff" stroke-width="0.5" stroke-linejoin="round">
             <polygon points="20,100 30,70 60,100" fill="#FFFFFF"/>
@@ -62,10 +57,10 @@
             <circle cx="160" cy="125" r="1.5"/>
             <circle cx="90" cy="175" r="2"/>
             <circle cx="135" cy="165" r="2"/>
-            <circle cx="110" cy="195" r="3" fill="#FFFFFF" filter="url(#glow)"/>
+            <circle cx="110" cy="195" r="2"/>
         </g>
     </g>
 
     <!-- ================= 品牌文字 ================= -->
-    <text x="225" y="142" font-family="'Arial Black', 'Segoe UI Black', -apple-system, sans-serif" font-size="100" font-weight="900" letter-spacing="4" fill="url(#text-gradient)">CLOUDBERG</text>
+    <text x="276" y="168" font-family="'Arial Black', 'Segoe UI Black', -apple-system, sans-serif" font-size="100" font-weight="900" letter-spacing="4" fill="url(#text-gradient)">CLOUDBERG</text>
 </svg>
